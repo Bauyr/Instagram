@@ -1,0 +1,28 @@
+﻿<Window x:Class="Instagram.InstaPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Instagram"
+        mc:Ignorable="d"
+        Title="InStoGram" Height="700" Width="400">
+    <Window.Resources>
+        <Color x:Key="Color1">#FFDDDDDD</Color>
+    </Window.Resources>
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="70" Margin="0,599,0,0" VerticalAlignment="Top" Width="392" Background="#FFECF0F1">
+            <Button x:Name="Home" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Height="70" Margin="0,0,0,-6" Background="#FFECF0F1" BorderBrush="#FFECF0F1" Click="home_clicked"/>
+            <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Height="70" Background="#FFECF0F1" BorderBrush="#FFECF0F1" Margin="98,0,0,0" Click="search_clicked"/>
+            <Button x:Name="Upload" Content="Upload" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Height="70" Background="#FFECF0F1" BorderBrush="#FFECF0F1" Margin="196,0,0,0" Click="upload_clicked"/>
+            <Button x:Name="Myprofile" Content="My profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Height="70" Background="#FFECF0F1" BorderBrush="#FFECF0F1" Margin="294,0,0,0" Click="myprofile_clicked"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="365" Background="#FFF1EAEA" Margin="10,0,0,0">
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" VerticalContentAlignment="Top">
+                <Grid Name="panelforall" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</Window>
